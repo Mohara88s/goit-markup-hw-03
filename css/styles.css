@@ -1,0 +1,145 @@
+:root {
+  /* fonts */
+  --main-font: 'Roboto', sans-serif;
+  --second-font: 'Raleway', sans-serif;
+
+  /* colors */
+  --text-color: #434455;
+  --primary-brand-color: #4d5ae5;
+  --active-primary-brand-color: #404bbf;
+  --bg-color: #fff;
+  --dark-color: #2e2f42;
+  --light-color: #f4f4fd;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+button {
+  color: currentColor;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  text-align: center;
+  color: var(--dark-color);
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+
+.logo {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.16667;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
+
+.logo-accent {
+  color: var(--primary-brand-color);
+}
+
+.nav {
+  font-weight: 500;
+  color: var(--dark-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.address-link:hover,
+.address-list:focus {
+  color: var(--active-primary-brand-color);
+}
+
+.hero-section {
+  color: var(--bg-color);
+  background-color: var(--dark-color);
+}
+
+.hero-slogan {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07143;
+  text-align: center;
+}
+
+.hero-btn {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background-color: var(--primary-brand-color);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--active-primary-brand-color);
+}
+
+.features-section-name {
+  display: none;
+}
+
+.our-team-section {
+  background-color: var(--light-color);
+}
+
+.footer {
+  background-color: var(--dark-color);
+}
+
+.footer-logo {
+  color: var(--light-color);
+}
+
+.footer-info {
+  color: var(--light-color);
+}
