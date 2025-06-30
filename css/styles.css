@@ -61,25 +61,6 @@ img {
   max-width: 100%;
 }
 
-/* common */
-
-h2 {
-  margin-bottom: 72px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11111;
-  text-align: center;
-  color: var(--dark-color);
-}
-
-h3 {
-  margin-bottom: 8px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  color: var(--dark-color);
-}
-
 .container {
   max-width: 1158px;
   padding: 0 15px;
@@ -97,25 +78,23 @@ h3 {
 
 .logo {
   display: block;
+  margin-right: 76px;
   font-family: var(--second-font);
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--dark-color);
-}
-
-.header-logo {
-  padding: 24px 0;
-  margin-right: 76px;
-}
-
-.logo-accent {
   color: var(--primary-brand-color);
 }
 
+.logo-span {
+  color: var(--dark-color);
+}
+
 .nav {
+  display: flex;
+  align-items: center;
   font-weight: 500;
   color: var(--dark-color);
 }
@@ -166,7 +145,8 @@ section {
   margin: 0 auto 48px auto;
   font-weight: 700;
   font-size: 56px;
-  line-height: 1.07143;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
   text-align: center;
 }
 
@@ -188,8 +168,19 @@ section {
   background-color: var(--active-primary-brand-color);
 }
 
-.features-section-name {
+.features-section-title {
   display: none;
+}
+
+.features-section-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--dark-color);
 }
 
 .features-list {
@@ -197,12 +188,39 @@ section {
   gap: 24px;
 }
 
-.features-list li {
+.features-list-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
+}
+
+.features-list-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+
+.features-list-caption {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .our-team-section {
   background-color: var(--light-color);
+}
+
+.our-team-section-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--dark-color);
 }
 
 .our-team-list {
@@ -210,12 +228,12 @@ section {
   gap: 24px;
 }
 
-.our-team-list li {
+.our-team-list-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
   border-radius: 0 0 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .our-team-list-info {
@@ -226,6 +244,33 @@ section {
   flex-direction: column;
 }
 
+.our-team-list-name {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+
+.our-team-list-position {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.our-portfolio-section-title {
+  margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--dark-color);
+}
+
 .our-portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -233,7 +278,7 @@ section {
   column-gap: 24px;
 }
 
-.our-portfolio-list li {
+.our-portfolio-list-item {
   flex-basis: calc((100% - 2 * 24px) / 3);
 }
 
@@ -244,16 +289,34 @@ section {
   padding: 32px 16px;
 }
 
+.our-portfolio-list-title {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark-color);
+}
+
+.our-portfolio-list-caption {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
 .footer {
   padding: 100px 0;
   background-color: var(--dark-color);
 }
 
 .footer-logo {
-  color: var(--light-color);
   margin-bottom: 16px;
 }
 
+.footer-logo-span {
+  color: var(--light-color);
+}
 .footer-info {
   max-width: 264px;
   color: var(--light-color);
